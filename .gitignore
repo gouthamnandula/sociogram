@@ -25,3 +25,6 @@ archive.zip
 *~
 .*.sw?
 .cache
+#test db
+test.db
+
