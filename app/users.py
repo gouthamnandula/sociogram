@@ -9,8 +9,11 @@ from fastapi_users.authentication import (
 )
 from fastapi_users.db import SQLAlchemyUserDatabase
 from app.db import User, get_user_db
+import dotenv
+dotenv.load_dotenv()
+import os
 
-SECRET = "Goutham24"
+SECRET = os.getenv("SECRET_KEY")
 
 #UUIDIDMixin -> Adds support for UUID instead of default int IDs
 #this class is responsible for managing user-related operations such as creating users, resetting passwords, and verifying accounts. It inherits from BaseUserManager and UUIDIDMixin to provide these functionalities while using UUIDs for user identification.
