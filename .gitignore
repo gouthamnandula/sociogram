@@ -1,28 +1,68 @@
-.idea
-.ipynb_checkpoints
-.mypy_cache
-.vscode
-__pycache__
-.pytest_cache
-htmlcov
-dist
-site
+# 🔐 Environment variables
+.env
+.env.*
+*.env
+
+# 🐍 Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# 📦 Virtual environments
+venv/
+env/
+ENV/
+env3.*/
+.venv/
+
+# 🧪 Testing / coverage
+.pytest_cache/
 .coverage*
 coverage.xml
-.netlify
-test.db
-log.txt
-Pipfile.lock
-env3.*
-env
-docs_build
-site_build
-venv
-docs.zip
-archive.zip
+htmlcov/
 
-# vim temporary files
+# 🧠 IDEs
+.vscode/
+.idea/
+
+# 📊 MyPy
+.mypy_cache/
+
+# 📓 Jupyter
+.ipynb_checkpoints/
+
+# 🗄️ Database
+*.db
+*.sqlite3
+
+# 📁 Build / dist
+dist/
+build/
+site/
+site_build/
+docs_build/
+
+# 📦 Archives
+*.zip
+
+# 📄 Logs
+*.log
+log.txt
+
+# 🌐 Netlify
+.netlify/
+
+# 🧾 Pipenv
+Pipfile.lock
+
+# 🧹 Cache
+.cache/
+
+# 📝 OS files
+.DS_Store
+Thumbs.db
+
+# 🧪 Temp files
 *~
 .*.sw?
-.cache
-
